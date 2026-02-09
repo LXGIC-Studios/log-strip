@@ -1,0 +1,42 @@
+{
+  "name": "@lxgicstudios/log-strip",
+  "version": "1.0.0",
+  "description": "Find and remove console.log, console.debug, debugger, and alert() statements from your codebase. Supports auto-fix, git staged files, and CI mode.",
+  "main": "dist/index.js",
+  "bin": {
+    "log-strip": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "console-log",
+    "debugger",
+    "lint",
+    "clean",
+    "strip",
+    "remove",
+    "ci",
+    "git-hooks",
+    "pre-commit",
+    "cli",
+    "devtools"
+  ],
+  "author": "LXGIC Studios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxgicstudios/log-strip"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  }
+}
